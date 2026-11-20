@@ -20,7 +20,7 @@
 .\installer\BuildInstaller.ps1 -Payload '.\build\release' -Makensis 'C:\tools\nsis\makensis.exe'
 ```
 
-安装包输出到 `outputs/1.4.3/QSLPost-Setup-1.4.3.exe`。
+安装包输出到 `outputs/1.4.4/QSLPost-Setup-1.4.4.exe`。
 
 默认构建把通用名址示例嵌入使用手册。可以通过 `-GuideExample` 指定自用的 XML 文件，将该文件保存在仓库之外。根节点为 `Contact`，可填写 `Callsign`、`Name`、`Address`、`PostalCode`、`Phone`、`Email`、`EnglishName` 和 `EnglishAddress`。
 

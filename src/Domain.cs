@@ -40,14 +40,20 @@ namespace QslPost
     public class Card
     {
         public string Id = "", FromCall = "", ToCall = "", Via = "", Country = "", Grid = "";
-        public string Direction = "出口", QsoUtc = "", Frequency = "14.250", Mode = "SSB";
-        public string RstSent = "59", RstReceived = "59", Kind = "QSO", Equipment = "", Antenna = "", Power = "";
+        public string Direction = "出口", QsoUtc = "", Frequency = "", Mode = "";
+        public string RstSent = "", RstReceived = "", Kind = "QSO", Equipment = "", Antenna = "", Power = "";
         public string SenderAddress = "", RecipientAddress = "", MailClass = "平信", Notes = "";
         public string Status = "待封发", BagId = "", CreatedUtc = "";
         public string SourceId = "";
         public List<string> PreviousBagIds = new List<string>();
         [XmlIgnore] public string ImportTracking = "";
         [XmlIgnore] public string ImportFormat = "";
+
+        internal string FrequencyWithUnit { get { return Frequency.Length==0?"":Frequency+" MHz"; } }
+        internal string SignalReport(string separator)
+        {
+            return RstSent.Length==0&&RstReceived.Length==0?"":RstSent+separator+RstReceived;
+        }
 
         internal Card Snapshot()
         {
@@ -126,7 +132,7 @@ namespace QslPost
         {
             origin = origin.Trim().ToUpperInvariant(); destination = destination.Trim().ToUpperInvariant();
             if (!Regex.IsMatch(origin, "^[A-Z]{6}$") || !Regex.IsMatch(destination, "^[A-Z]{6}$"))
-                throw new InvalidOperationException("起讫节点代码须为 6 位英文字母，例如 QSLAAA。它是本系统内部节点代码。");
+                throw new InvalidOperationException("内部节点代码须为 6 位英文字母。");
             if (serial < 1 || serial > 9999) throw new InvalidOperationException("该年度起讫路向的封发序号已满，请变更内部节点代码。");
             string category = transport == "航空" ? "A" : transport == "SAL" ? "B" : "C";
             return origin + destination + category + "QL" + (date.Year % 10).ToString() + serial.ToString("0000");

@@ -8,9 +8,9 @@ using System.Windows.Forms;
 [assembly:AssemblyTitle("QSL 邮务台")]
 [assembly:AssemblyProduct("QSL 邮务台")]
 [assembly:AssemblyDescription("QSL 卡片收发、封发与追溯管理系统")]
-[assembly:AssemblyVersion("1.4.3.0")]
-[assembly:AssemblyFileVersion("1.4.3.0")]
-[assembly:AssemblyInformationalVersion("1.4.3")]
+[assembly:AssemblyVersion("1.4.4.0")]
+[assembly:AssemblyFileVersion("1.4.4.0")]
+[assembly:AssemblyInformationalVersion("1.4.4")]
 namespace QslPost
 {
     internal static class Program

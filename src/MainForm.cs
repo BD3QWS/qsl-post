@@ -120,8 +120,9 @@ namespace QslPost
                 {
                     title.Text=card.FromCall+" → "+card.ToCall;
                     string tracking=String.Join(" / ",repo.CardShipments(card).Select(x=>x.Number));
-                    meta.Text=card.Id+"\n"+card.Direction+" · "+card.Status+" · "+card.Kind+"\n"+
-                        card.Frequency+" MHz / "+card.Mode+"\n物流号码  "+(tracking.Length==0?"未绑定":tracking);
+                    string contact=String.Join(" / ",new[]{card.FrequencyWithUnit,card.Mode}.Where(value=>value.Length>0));
+                    meta.Text=card.Id+"\n"+card.Direction+" · "+card.Status+" · "+card.Kind+
+                        (contact.Length==0?"":"\n"+contact)+"\n物流号码  "+(tracking.Length==0?"未绑定":tracking);
                     timeline.AuditEvents=repo.History(card.Id).Take(6).ToList();
                 }
                 else

@@ -15,7 +15,20 @@ namespace QslPost
         {
             Card c=original==null?new Card{FromCall=repo.Data.Settings.Callsign,SenderAddress=repo.Data.Settings.Address}:repo.Clone(repo.Data).Cards.Single(x=>x.Id==original.Id);
             string sender=DemoData.Address(repo.Data,c.FromCall,c.SenderAddress),recipient=DemoData.Address(repo.Data,c.ToCall,c.RecipientAddress);
-            var fields=new List<Field>{new Field("direction","业务方向",c.Direction).Choices("出口","进口"),new Field("kind","卡片内容",c.Kind).Choices("QSO","SWL"),new Field("from","原寄电台呼号 *",c.FromCall),new Field("to","寄达电台呼号 *",c.ToCall),new Field("via","QSL 经理人 / Via",c.Via),new Field("country","国家 / 地区",c.Country),new Field("grid","梅登海德网格",c.Grid),new Field("utc","通联 UTC · yyyy-MM-dd HH:mm",c.QsoUtc),new Field("freq","频率 MHz",c.Frequency),new Field("mode","通联模式",c.Mode).Choices("SSB","CW","FM","AM","FT8","FT4","RTTY","SSTV","DIGITAL","OTHER"),new Field("rs","发出 RST",c.RstSent),new Field("rr","收到 RST",c.RstReceived),new Field("equipment","设备",c.Equipment),new Field("antenna","天线",c.Antenna),new Field("power","功率 W",c.Power),new Field("mail","邮类",c.MailClass).Choices("平信","条码平信","无单平信","挂信","印刷品","快递","合封"),new Field("sender","寄件人名址",sender).Multi(),new Field("address","收件人名址",recipient).Multi(),new Field("notes","备注",c.Notes).Multi()};
+            var fields=new[]{
+                new Field("direction","业务方向",c.Direction).Choices("出口","进口"),
+                new Field("kind","卡片内容",c.Kind).Choices("QSO","SWL"),
+                new Field("from","原寄电台呼号 *",c.FromCall),new Field("to","寄达电台呼号 *",c.ToCall),
+                new Field("via","QSL 经理人 / Via",c.Via),new Field("country","国家 / 地区",c.Country),
+                new Field("grid","梅登海德网格",c.Grid),new Field("utc","通联 UTC · yyyy-MM-dd HH:mm",c.QsoUtc),
+                new Field("freq","频率 MHz",c.Frequency),
+                new Field("mode","通联模式",c.Mode).Choices("","SSB","CW","FM","AM","FT8","FT4","RTTY","SSTV","DIGITAL","OTHER"),
+                new Field("rs","发出 RST",c.RstSent),new Field("rr","收到 RST",c.RstReceived),
+                new Field("equipment","设备",c.Equipment),new Field("antenna","天线",c.Antenna),new Field("power","功率 W",c.Power),
+                new Field("mail","邮类",c.MailClass).Choices("平信","条码平信","无单平信","挂信","印刷品","快递","合封"),
+                new Field("sender","寄件人名址",sender).Multi(),new Field("address","收件人名址",recipient).Multi(),
+                new Field("notes","备注",c.Notes).Multi()
+            };
             using(var f=new RecordDialog(original==null?"登记 QSL 卡片":"修改卡片 · "+c.Id,"通联时间填 UTC，卡号自动生成。",fields,d=>{
                 c.Direction=d.Value("direction");c.Kind=d.Value("kind");c.FromCall=d.Value("from");c.ToCall=d.Value("to");c.Via=d.Value("via");c.Country=d.Value("country");c.Grid=d.Value("grid");c.QsoUtc=d.Value("utc");c.Frequency=d.Value("freq");c.Mode=d.Value("mode");c.RstSent=d.Value("rs");c.RstReceived=d.Value("rr");c.Equipment=d.Value("equipment");c.Antenna=d.Value("antenna");c.Power=d.Value("power");c.MailClass=d.Value("mail");
                 if(d.Value("sender")!=sender)c.SenderAddress=d.Value("sender");
@@ -27,7 +40,13 @@ namespace QslPost
         {
             var settings=repo.Data.Settings;
             using(var f=new RecordDialog("建立封发邮袋","节点代码填 6 位字母。袋号按路向和毛重生成。",new[]{
-                new Field("from","封发台 / 原寄卡片局 *",settings.Callsign.Length>0?settings.Callsign:settings.Organization),new Field("to","寄达台 / 卡片局 *",""),new Field("origin","原寄内部节点代码 · 6 位字母",settings.OriginCode),new Field("destination","寄达内部节点代码 · 6 位字母","QSLBBB"),new Field("direction","业务方向","出口").Choices("出口","进口"),new Field("transport","运输方式","航空").Choices("航空","SAL","水陆"),new Field("class","邮袋类型","挂信").Choices("平信","挂信","合封","印刷品","快递","空袋"),new Field("weight","毛重 kg · 0-999.8","0.5"),new Field("seal","封志 / 特别标记",""),new Field("via","中转卡片局 / Via",""),new Field("notes","封发说明","").Multi()
+                new Field("from","封发台 / 原寄卡片局 *",settings.Callsign.Length>0?settings.Callsign:settings.Organization),
+                new Field("to","寄达台 / 卡片局 *",""),
+                new Field("origin","原寄内部节点代码 · 6 位字母 *",settings.OriginCode),
+                new Field("destination","寄达内部节点代码 · 6 位字母 *",""),
+                new Field("direction","业务方向","出口").Choices("出口","进口"),new Field("transport","运输方式","航空").Choices("航空","SAL","水陆"),
+                new Field("class","邮袋类型","挂信").Choices("平信","挂信","合封","印刷品","快递","空袋"),new Field("weight","毛重 kg · 0-999.8 *",""),
+                new Field("seal","封志 / 特别标记",""),new Field("via","中转卡片局 / Via",""),new Field("notes","封发说明","").Multi()
             },d=>{decimal weight;if(!Decimal.TryParse(d.Value("weight"),NumberStyles.Number,CultureInfo.InvariantCulture,out weight))throw new InvalidOperationException("重量须为数字，使用英文小数点。");var b=repo.CreateBag(d.Value("from"),d.Value("to"),d.Value("origin"),d.Value("destination"),d.Value("transport"),d.Value("class"),d.Value("direction"),weight,d.Value("seal"),d.Value("via"),d.Value("notes"));bagFilter=b.Id;}))if(f.ShowDialog(this)==DialogResult.OK)Navigate("封发作业");
         }
         void AssignCards(string[] ids)
@@ -185,7 +204,9 @@ namespace QslPost
         {
             var c=FindCard(id);if(c==null)return;using(var f=new GlassForm{Text="逐张溯源 · "+c.Id,Width=1100,Height=780,MinimumSize=new Size(760,530),StartPosition=FormStartPosition.CenterParent,Padding=new Padding(24)})
             {
-                var top=Ui.Label(c.FromCall+" → "+c.ToCall+"   /   "+c.Status,21,true);top.Dock=DockStyle.Top;top.Height=50;var info=Ui.Label(c.Id+"    "+c.Direction+"    "+c.QsoUtc+" UTC    "+c.Frequency+" MHz / "+c.Mode+"\n所属邮袋："+(c.BagId.Length>0?c.BagId:"尚未装袋")+"\n物流："+String.Join(" / ",repo.CardShipments(c).Select(s=>s.Number+"（"+s.Leg+" / "+s.Status+"）").ToArray()),10,false);info.Dock=DockStyle.Top;info.Height=108;
+                var top=Ui.Label(c.FromCall+" → "+c.ToCall+"   /   "+c.Status,21,true);top.Dock=DockStyle.Top;top.Height=50;
+                string contact=String.Join("    ",new[]{c.Id,c.Direction,c.QsoUtc.Length==0?"":c.QsoUtc+" UTC",c.FrequencyWithUnit,c.Mode}.Where(value=>value.Length>0));
+                var info=Ui.Label(contact+"\n所属邮袋："+(c.BagId.Length>0?c.BagId:"尚未装袋")+"\n物流："+String.Join(" / ",repo.CardShipments(c).Select(s=>s.Number+"（"+s.Leg+" / "+s.Status+"）")),10,false);info.Dock=DockStyle.Top;info.Height=108;
                 var bar=Ui.Toolbar();bar.Dock=DockStyle.Bottom;bar.Controls.Add(Ui.Button("打印卡号标签",()=>OpenPrint("cardlabel",FindBag(c.BagId),c,null),true));bar.Controls.Add(Ui.Button("查看相关物流",()=>{f.Close();Navigate("物流追踪");var s=repo.CardShipments(c).FirstOrDefault();if(s!=null)SelectRow(shipGrid,s.Id);},false));
                 var history=Ui.Grid();Ui.Columns(history,"id","时间","经办人","流转操作","说明");history.Columns[4].FillWeight=280;foreach(var a in repo.History(c.Id))history.Rows.Add(a.Sequence.ToString(),Clock.Display(a.TimeUtc),a.Actor,a.Action,a.Details);f.Controls.Add(history);f.Controls.Add(info);f.Controls.Add(top);f.Controls.Add(bar);f.ShowDialog(this);
             }

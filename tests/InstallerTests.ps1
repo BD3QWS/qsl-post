@@ -8,7 +8,7 @@ $workspace=(Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
 $testPath=[IO.Path]::GetFullPath($TestRoot)
 if(!$testPath.StartsWith($workspace+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase) -or
     (Test-Path -LiteralPath $testPath)){throw 'Choose a new test directory inside this workspace.'}
-if(!$Setup){$Setup=Join-Path $workspace 'outputs\1.4.3\QSLPost-Setup-1.4.3.exe'}
+if(!$Setup){$Setup=Join-Path $workspace 'outputs\1.4.4\QSLPost-Setup-1.4.4.exe'}
 $published=Get-Item -LiteralPath $Setup
 $payload=Join-Path $workspace 'build\release'
 $releaseApp=Join-Path $payload 'QslPost.exe'

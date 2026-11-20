@@ -26,7 +26,7 @@ SetCompressor /SOLID lzma
 !include "LogicLib.nsh"
 !include "WinVer.nsh"
 !include "x64.nsh"
-!define RELEASE_VERSION "1.4.3"
+!define RELEASE_VERSION "1.4.4"
 Name "QSL 邮务台"
 Caption "QSL 邮务台 ${RELEASE_VERSION} 安装向导"
 OutFile "${OUTPUT}"

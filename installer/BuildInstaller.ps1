@@ -9,7 +9,7 @@ param(
 $ErrorActionPreference='Stop'
 $payloadPath=(Resolve-Path -LiteralPath $Payload).Path
 if(!$Output) {
-    $Output=Join-Path $PSScriptRoot '..\outputs\1.4.3\QSLPost-Setup-1.4.3.exe'
+    $Output=Join-Path $PSScriptRoot '..\outputs\1.4.4\QSLPost-Setup-1.4.4.exe'
 }
 $outputPath=[IO.Path]::GetFullPath($Output)
 New-Item -ItemType Directory -Path (Split-Path -Parent $outputPath) -Force | Out-Null

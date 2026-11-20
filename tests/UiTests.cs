@@ -234,8 +234,45 @@ class UiTests
         using(var repo=new Repository(locations.DataDirectory))using(var main=new MainForm(repo,false,locations))
         {
             CheckStartupGuide(main,repo,output);main.Navigate("卡片台账");Capture(main,Path.Combine(output,"空台账.png"));
-            main.Navigate("卡片台账");Modal(f=>{Find(f,"from").Text="DEMO/A";Find(f,"to").Text="DEMO/B";Find(f,"utc").Text="2026-11-18 10:30";Capture(f,Path.Combine(output,"登记卡片.png"));Button(f,"保存").PerformClick();});Button(main,"登记卡片").PerformClick();if(callbackError!=null)throw callbackError;Assert(repo.Data.Cards.Count==1&&repo.Data.Cards[0].ToCall=="DEMO/B","card registration saves through actual GUI action");
-            main.Navigate("封发作业");Modal(f=>{Find(f,"to").Text="DEMO Bureau";Find(f,"destination").Text="QSLBBB";Capture(f,Path.Combine(output,"建立邮袋.png"));Button(f,"保存").PerformClick();});Button(main,"建立邮袋").PerformClick();if(callbackError!=null)throw callbackError;Assert(repo.Data.Bags.Count==1,"bag creation through actual GUI action");
+            string[] qsoFields={"utc","freq","mode","rs","rr"};
+            Modal(f=>{
+                Assert(qsoFields.All(field=>Find(f,field).Text=="")&&Find(f,"to").Text=="",
+                    "new cards leave contact details blank");
+                Assert(Find(f,"from").Text=="DEMO/A","the sender uses the configured station call sign");
+                Capture(f,Path.Combine(output,"登记卡片.png"));
+                Find(f,"to").Text="DEMO/B";
+                Button(f,"保存").PerformClick();
+            });
+            Button(main,"登记卡片").PerformClick();if(callbackError!=null)throw callbackError;
+            var card=repo.Data.Cards.Single();
+            Assert(card.ToCall=="DEMO/B"&&card.QsoUtc==""&&card.Frequency==""&&card.Mode==""&&card.RstSent==""&&card.RstReceived=="",
+                "card registration saves omitted contact details as empty values");
+            Modal(f=>{
+                Assert(qsoFields.All(field=>Find(f,field).Text==""),"editing keeps omitted contact details blank");
+                Find(f,"utc").Text="2026-11-18 10:30";
+                Find(f,"freq").Text="7.074";
+                ((ComboBox)Find(f,"mode")).SelectedItem="FT8";
+                Find(f,"rs").Text="-10";
+                Find(f,"rr").Text="-14";
+                Button(f,"保存").PerformClick();
+            });
+            Button(main,"修改").PerformClick();if(callbackError!=null)throw callbackError;
+            Modal(f=>{
+                Assert(qsoFields.Select(field=>Find(f,field).Text).SequenceEqual(new[]{"2026-11-18 10:30","7.074","FT8","-10","-14"}),
+                    "editing shows the contact details entered and saved by the operator");
+                f.Close();
+            });
+            Button(main,"修改").PerformClick();if(callbackError!=null)throw callbackError;
+            main.Navigate("封发作业");
+            Modal(f=>{
+                Assert(Find(f,"destination").Text==""&&Find(f,"weight").Text=="","new bags leave the destination code and weight blank");
+                Find(f,"to").Text="DEMO Bureau";Find(f,"destination").Text="QSLBBB";Find(f,"weight").Text="0.6";
+                Capture(f,Path.Combine(output,"建立邮袋.png"));
+                Button(f,"保存").PerformClick();
+            });
+            Button(main,"建立邮袋").PerformClick();if(callbackError!=null)throw callbackError;
+            var enteredBag=repo.Data.Bags.Single();
+            Assert(enteredBag.DestinationCode=="QSLBBB"&&enteredBag.WeightKg==0.6m,"bag creation saves the entered destination and weight");
             Modal(f=>{var grid=f.Controls.OfType<DataGridView>().First();grid.Rows[0].Cells[0].Value=true;Button(f,"装入所选").PerformClick();});Button(main,"装入卡片").PerformClick();if(callbackError!=null)throw callbackError;Assert(repo.Data.Bags[0].CardIds.Count==1,"bag selection dialog commits checked cards");
             Assert(Grids(main).All(g=>g.Rows.Count==1),"initial bag details display each member exactly once");main.Navigate("封发作业");Assert(Grids(main).All(g=>g.Rows.Count==1),"bag details refresh does not append duplicates");
             string bagId=repo.Data.Bags[0].Id;repo.Transition(bagId,"已封袋","UI 核对");main.Navigate("封发作业");

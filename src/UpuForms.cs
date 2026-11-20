@@ -121,7 +121,7 @@ namespace QslPost
                 case "Qso": return card == null ? "" : card.QsoUtc;
                 case "MHz": return card == null ? "" : card.Frequency;
                 case "Mode": return card == null ? "" : card.Mode;
-                case "Rst": return card == null ? "" : card.RstSent + "/" + card.RstReceived;
+                case "Rst": return card == null ? "" : card.SignalReport("/");
                 case "Equipment": return card == null ? "" : card.Equipment;
                 case "Power": return card == null ? "" : card.Power;
                 case "Antenna": return card == null ? "" : card.Antenna;

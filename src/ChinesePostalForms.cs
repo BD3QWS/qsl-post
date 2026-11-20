@@ -344,7 +344,7 @@ namespace QslPost
                 PostalFormInk.ChoicesWithSelection(g,PostalFormInk.Area(x,210,w,9),true,mode,
                     "FM","调频","AM","调幅","SSB","单边带","CW","等幅电报","Other","其他");
                 ThreeFields(g,x,219,w,13.2f,new[]{"Equipment","Power","Antenna"},new[]{"设备","功率","天线"},new[]{a==null?"":a.Equipment,a==null?"":a.Power,a==null?"":a.Antenna});
-                PostalFormInk.Field(g,"Rst","信号报告",a==null?"":a.RstSent+" / "+a.RstReceived,x,232.2f,w*.30f,12,true);
+                PostalFormInk.Field(g,"Rst","信号报告",a==null?"":a.SignalReport(" / "),x,232.2f,w*.30f,12,true);
                 PostalFormInk.Field(g,"Grid","网格",a==null?"":a.Grid,x+w*.30f,232.2f,w*.7f,12,true);
                 PostalFormInk.Field(g,"Notes","其他说明",notes,x,244.2f,w,28.6f,true);
                 PostalFormInk.Field(g,"BodySignature","日期和签字",c.Date+"    "+c.Operator,x,272.8f,w,13,true);

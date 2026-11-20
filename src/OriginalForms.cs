@@ -114,10 +114,9 @@ namespace QslPost
                 case "DateDay": return DateComponent(c.Date,8,2);
                 case "QslSummary":
                     if(current==null)return "";
-                    string signal=current.RstSent+"/"+current.RstReceived;
                     return String.Join("  ",new[]{current.Id,current.FromCall+" → "+current.ToCall,
-                        current.QsoUtc.Length==0?"":current.QsoUtc+" UTC",current.Frequency.Length==0?"":current.Frequency+" MHz",
-                        current.Mode,signal=="/"?"":signal}.Where(text=>text.Length>0));
+                        current.QsoUtc.Length==0?"":current.QsoUtc+" UTC",current.FrequencyWithUnit,
+                        current.Mode,current.SignalReport("/")}.Where(text=>text.Length>0));
                 case "Hour": return QsoPart(current,11,2);
                 case "Minute": return QsoPart(current,14,2);
                 case "Registered": return current!=null&&current.MailClass=="挂信"?"1":"";

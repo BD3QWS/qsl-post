@@ -56,6 +56,7 @@ namespace QslPost
                 repo.AddCard(new Card{
                     Direction=inbound?"进口":"出口",FromCall=from,ToCall=to,
                     QsoUtc="2026-11-17 "+(i%24).ToString("00")+":30",Frequency=i%2==0?"14.250":"7.050",Mode=i%2==0?"SSB":"CW",
+                    RstSent="59",RstReceived="59",
                     Country=i%2==0?"日本（示例）":"德国（示例）",MailClass=i%3==0?"平信":"挂信",
                     SenderAddress=personal&&!inbound?address:"演示原寄台",RecipientAddress=inbound?address:"演示寄达台",
                     Notes="演示卡片，通联数据为示例。"
