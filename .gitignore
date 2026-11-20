@@ -1,0 +1,6 @@
+work/
+build/
+outputs/
+*.user
+*.suo
+.impeccable/review/

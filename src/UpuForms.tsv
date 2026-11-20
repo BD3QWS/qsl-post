@@ -1,0 +1,123 @@
+key	code	width_mm	height_mm	manual_pages	size_basis	layout	title	variant	fields	row_source	columns	purpose
+upu-cn01	CN 01	130	81	261	按本版券面约 1.61∶1 配 130 mm 宽；未查到本版成品标注	coupon	QSL 回卡兑换券	发券面	From=发券卡片局;To=受理卡片局;Reference=券号;Date=发券日;Expires=有效期;Qty=回卡张数;Card=关联卡号;Operator=经办			登记卡片局内部约定的回卡额度。
+upu-cn01-back	CN 01	130	81	261–263	同发券面；本版成品标注待核实	slip	QSL 回卡兑换券	兑付面	Reference=原券号;CallFrom=发卡呼号;CallTo=回卡呼号;Card=回卡编号;Date=兑付日期;Qty=兑付张数;Operator=签收经办;To=受理卡片局			留存回卡券兑付和销账信息。
+upu-cn03	CN 03	210	297	264	样张标注	table	回卡券兑换明细表		From=报表卡片局;To=受理卡片局;Period=结算期;Date=制表日	manual	Reference=券号区间;Country=组织／地区;Qty+=兑换数;Unused+=退回数;Net+=实登记数;Notes=凭证／备考	按发券卡片局对账已兑、退回和实登记数量。
+upu-cn04	CN 04	74	26	242	样张标注	item	挂号卡片签		ItemId=扫描编号;Card=卡号;CallTo=收卡呼号			挂号卡件编号签，扫描编号可填承运商提供的号码。
+upu-cn05bis	CN 05bis	74	26	244	样张标注	item	可追踪卡片签		ItemId=扫描编号;Card=卡号;CallTo=收卡呼号			用于可追踪卡件。
+upu-cn05bis-prio	CN 05bis	50	25	244	航空优先示意无成品标注；采用 50 × 25 mm 辅助贴	mark	航空优先	配套提示贴				给同页追踪标签增加航空优先提示。
+upu-cn06	CN 06	74	26	224	样张标注	item	保价卡片签		ItemId=扫描编号;Card=卡号;Value=登记价值			记录需特别交接的卡片及其自填价值。
+upu-cn06-mark	CN 06	37	13	224	样张标注	mark	保价	副标				配合保价主签贴在袋或封套上。
+upu-cn07	CN 07	210	105	267	样张标注；容差 2 mm	slip	QSL 收卡与交付回执		From=发卡台;To=接收台;Reference=交付单号;Date=记账日期;Card=卡号;Tracking=承运商单号;Qty=实收件数;Received=接收时间;Sign=签收人;AddressTo=回执寄送名址;CallTo=寄达呼号			记录卡片到局、交付和确认结果。
+upu-cn08	CN 08	210	297	350	样张标注	notice	国际 QSL 查单	正面	Case=查询单号;From=发查台;To=寄达台;CallFrom=发卡呼号;CallTo=收卡呼号;Card=卡片编号;Tracking=物流号码;Qso=通联 UTC;MHz=频率 MHz;Mode=模式;Rst=RST 发／收;AddressFrom=寄件名址;AddressTo=寄达名址;Date=发查日期;Subject=主题;Notes*=待核查事项;Attachment*=附证;Equipment=设备;Power=功率;Antenna=天线			立案追查未到卡、袋或交接异常。
+upu-cn08-back	CN 08	210	297	351	同一查单的反面；沿用正面标注规格	notice	国际 QSL 查单	背面	Case=原查单号;From=原发台;Via=中转台;To=寄达台;Dispatch=总封号;Bag=袋号;Tracking=物流号码;CaseState=处理状态;Received=接收时间;Date=答复日期;Reply*=中转与寄达答复;Remedy*=补寄／确认结果;Attachment*=交接证明;TransitReply*=中转局意见			留存中转和寄达端回查结果。
+upu-cn08-receipt	CN 08	210	297	352	样张标注	notice	QSL 查单收讫回执		Case=查单号;From=发查台;To=受理台;Date=受理日期;Card=卡号;Tracking=物流号码;Operator=受理人;CaseState=状态;Reply*=已受理事项与反馈期限			发回查询受理凭证。
+upu-cn09	CN 09	210	297	256	样张标注	table	预付回卡发出表		From=发回卡局;To=寄达卡片局;Period=报告期;Date=制表日期	bags	Date=交寄日;Dispatch=总封号;Bag=邮袋;Qty+=回卡张数;Weight+=重量 kg;Notes=回寄凭证	逐封登记预先约定承担回卡成本的卡件。
+upu-cn10	CN 10	210	297	257	样张标注	table	预付回卡汇总表		From=报表卡片局;To=合作卡片局;Period=汇总期;Date=汇总日期	manual	Reference=CN 09 编号;Date=日期;Qty+=张数;Weight+=重量 kg;Notes=审核	按 CN 09 汇总交接数和重量。
+upu-cn11	CN 11	148	210	236	样张标注；对折成 148 × 105 mm	notice	回寄费用交款单	A/B 折叠联	From=交款台;To=收取台;Reference=收款记录;Date=日期;Tracking=关联物流;Qty=卡片张数;Amount=预交金额;Currency=币种;Receive=实收;Operator=经办;Notes*=A 联 · 交款台填写;Reply*=B 联 · 收取台确认			登记回寄费用并在留存联复核；成品按中线折叠。
+upu-cn12	CN 12	210	297	238	样张标注	table	代垫寄递费用月表		From=记账卡片局;To=往来卡片局;Period=月份;Currency=币种;Date=制表日期	manual	Reference=凭证号;Tracking=物流号码;Nature=费用项目;Qty+=件数;Amount+=垫付金额;Notes=报销备注	核对收寄、退件和代垫费用。
+upu-cn13	CN 13	210	297	300	样张标注 210 × 297 mm	notice	异常扣留卡件报告		From=发现台;To=责任台;Case=报告号;Card=卡片号;Bag=袋号;Tracking=物流号码;Decision=暂存／退回状态;Date=报告日期;Notes*=发现经过与异常原因;Evidence*=外观、照片或通知;Reply*=处置结果			记录异常卡件暂存和后续处置。
+upu-cn14	CN 14	220	160	306	原表只有长宽厚上限；本机默认 220 × 160 mm 转寄封面	envelope	改寄卡片合封封面		From=原发卡片局;To=改寄收件台;AddressTo=改寄地址;Country=地区;Via=转交台站;Reference=合封编号;Date=改寄日期;Notes=改寄原因			把改寄卡片归入一个转寄封套。
+upu-cn15	CN 15	52	52	310	原表标注最大 52 × 52 mm；采用上限	mark	退回卡片	退件贴	Reason=退回原因;CallFrom=返回呼号			贴在无法交付或地址错误的回退卡件上。
+upu-cn16	CN 16	210	297	142	样张标注	table	保价卡片专用清单		From=原寄台;To=寄达台;Dispatch=总封号;Bag=袋号;Date=交接日;Currency=币种	cards	Card=卡片编号;CallTo=收卡呼号;Qso=通联 UTC;Tracking=物流号码;Value=登记价值;Notes=特殊保管	随保价卡片交接，价值由经办人填写。
+upu-cn17	CN 17	210	297	315	样张标注 210 × 297 mm	notice	撤回、改址与费用更正申请	申请面	Case=申请号;From=申请单位;To=受理台;Card=卡片号;Tracking=物流号码;Request=撤回／改址／费用更正;AddressFrom=申请人地址;AddressTo=原投递地址;NewAddress=更正后地址;Amount=更正金额;Date=申请日期;Notes*=更正原因及交接指令			登记撤回寄件、改送和费用更正的请求。
+upu-cn17-back	CN 17	210	297	316	背面沿用申请面标注规格	notice	撤回、改址与费用更正申请	答复面	Case=申请号;From=申请卡片局;To=执行卡片局;Card=卡片编号;CaseState=办理状态;Received=执行日期;Operator=执行人;Reply*=受理答复及实际处理结果			回告发起方是否已执行。
+upu-cn18	CN 18	210	297	353	样张标注	notice	QSL 收到或未收到声明		Case=声明号;From=发卡台;To=申报台;Card=卡片号;Tracking=物流号码;Decision=已收／未收;Qso=通联 UTC;MHz=频率 MHz;Mode=模式;Rst=RST 发／收;Date=签认日期;Notes*=查找范围与声明;Attachment*=凭据			供个人台或卡片局签认接收情况。
+upu-cn19	CN 19	210	297	258	样张标注	table	预付回卡费用明细账		From=收款方;To=付款方;Period=账期;Currency=币种;Date=日期	manual	Reference=发卡记录;Qty+=卡数;Weight+=重量 kg;Rate=协议单价;Amount+=账面费用;Notes=核对记录	对依据双方约定发生的费用进行记账。
+upu-cn20	CN 20	210	297	259	样张标注	table	预付回卡费用汇总账		From=制表台;To=往来卡片局;Period=清算期间;Currency=币种;Date=日期	manual	Reference=CN 19 凭据;Period=期间;Qty+=张数;Amount+=合计;Credit+=已付;Balance+=待核金额	把回卡明细账按期汇总核对。
+upu-cn21	CN 21	210	297	354	样张标注	notice	CN 08 转查通知		Case=转查单号;RelatedCase=原 CN 08 编号;From=转发卡片局;To=承办卡片局;Via=中转局;Card=卡片号;Tracking=物流号码;Dispatch=关联总封;Bag=关联袋;Date=转发日;Notes*=转查事项与回复地址			让查询转入负责的卡片局并保留原单号。
+upu-cn22	CN 22	74	105	339	样张标注的最小成品规格	contents	QSL 简式内件说明	最小规格	CallFrom=寄卡;CallTo=收卡;Card=卡号;Category=类别	contents	Material=内件;Qty+=张数;Value=价值;Country=地区	小封套内件自填说明。原表允许 74 × 105 至 105 × 148 mm。
+upu-cn22-max	CN 22	105	148	339	样张标注的最大成品规格	contents	QSL 简式内件说明	最大规格	CallFrom=发卡呼号;CallTo=收卡呼号;Tracking=物流号;Category=卡件类别;Currency=币种;Date=填表日期	contents	Material=内件描述;Qty+=张数;Weight+=净重 kg;Value=价值;Country=地区	较大外封使用的简式内件说明。
+upu-cn22-back	CN 22	74	105	339	背面；沿用正面最小规格	notice	QSL 简式内件说明	背面小号	Reference=随附单号;Operator=填报经办;Notes*=内件及件数以实物核对；简式栏位不足时附 CN 23 内件表			随附补充资料及说明。
+upu-cn22-max-back	CN 22	105	148	339	背面；沿用正面最大规格	notice	QSL 简式内件说明	背面大号	Reference=随附单号;Operator=填报经办;Notes*=内件补充说明;Attachment*=其他附件			给大号 CN 22 提供补充说明区。
+upu-cn23	CN 23	210	148	340	样张标注	contents	QSL 详细内件清单	正面	CallFrom=发卡呼号;CallTo=收卡呼号;AddressFrom=发卡地址;AddressTo=寄达地址;Tracking=物流号码;Category=内件性质;Currency=币种;Date=填报日;Operator=填报人;Treatment=未交付处理	contents	Card=卡片编号;Material=内件;Qty+=数量;Weight+=净重 kg;Value=登记价值;Country=寄出地区	记录实体 QSL 卡及随附材料的数量、重量和自填价值。
+upu-cn23-back	CN 23	210	148	340	背面；沿用正面标注规格	notice	QSL 详细内件清单	背面	Reference=清单编号;Tracking=物流号码;Operator=签名;Date=日期;Notes*=补充材料、保管或退回方式;Attachment*=相关凭据清单			详细内件清单随附补充面。
+upu-cn24	CN 24	210	297	369–370	样张标注；报告分两面	notice	保价卡件异常情况报告	正面	Case=事件编号;From=发现卡片局;To=送交单位;Card=卡片号;Bag=邮袋;Tracking=物流号码;Date=记录时间;Seal=封志;Weight=实测 kg;Notes*=封装状态及发现经过;Attachment*=照片与随附记录			登记开袋验伤、短缺及保价件异常。
+upu-cn24-back	CN 24	210	297	370	背面；按主表标注规格	notice	保价卡件异常情况报告	背面	Case=事件编号;From=发现台;To=责任台;Amount=登记损失;Currency=币种;Date=处置日期;Notes*=破损或短缺记录;Reply*=后续交付与补发;Attachment*=签收证明			复核损失及后续处理。
+upu-cn25-lc	CN 25	105	74	131	样张允许 105 × 74 或 148 × 105 mm；此为小号	bundle	航空卡捆签	优先小号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			航空优先卡捆；对应白签变体。
+upu-cn25-lc-l	CN 25	148	105	131	样张标注大号	bundle	航空卡捆签	优先大号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			航空优先卡捆大规格。
+upu-cn25-ao	CN 25	105	74	131	样张标注小号	bundle	航空卡捆签	普通小号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			航空普通卡捆；对应浅蓝签变体。
+upu-cn25-ao-l	CN 25	148	105	131	样张标注大号	bundle	航空卡捆签	普通大号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			航空普通卡捆大规格。
+upu-cn25-r	CN 25	105	74	131	样张标注小号	bundle	航空卡捆签	挂号小号	From=扎捆台;To=分拣台;Via=转交台;Qty=挂号张数;Reference=关联封发;Operator=经办			航空挂号卡捆；对应粉色签变体。
+upu-cn25-r-l	CN 25	148	105	131	样张标注大号	bundle	航空卡捆签	挂号大号	From=扎捆台;To=分拣台;Via=转交台;Qty=挂号张数;Reference=关联封发;Operator=经办			航空挂号卡捆大规格。
+upu-cn25-tlc	CN 25	105	74	122	样张标注小号	bundle	航空散件过境卡捆签	优先小号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=成捆张数;Operator=经办			为空运散件过境的优先卡片扎捆；对应白签。
+upu-cn25-tlc-l	CN 25	148	105	122	样张标注大号	bundle	航空散件过境卡捆签	优先大号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=成捆张数;Operator=经办			航空过境优先卡捆大规格。
+upu-cn25-tao	CN 25	105	74	122	样张标注小号	bundle	航空散件过境卡捆签	普通小号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=成捆张数;Operator=经办			为空运散件过境的普通卡片扎捆；对应浅蓝签。
+upu-cn25-tao-l	CN 25	148	105	122	样张标注大号	bundle	航空散件过境卡捆签	普通大号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=成捆张数;Operator=经办			航空过境普通卡捆大规格。
+upu-cn25-tr	CN 25	105	74	122	样张标注小号	bundle	航空散件过境卡捆签	挂号小号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=挂号张数;Operator=经办			为空运散件过境的挂号卡片扎捆；对应粉色签。
+upu-cn25-tr-l	CN 25	148	105	122	样张标注大号	bundle	航空散件过境卡捆签	挂号大号	From=扎捆台;To=目的卡片局;Via=过境拆转台;Route=目的组别;Qty=挂号张数;Operator=经办			航空过境挂号卡捆大规格。
+upu-cn26-lc	CN 26	105	74	123、132	样张标注小号	bundle	水陆卡捆签	优先小号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			水陆优先卡捆；对应白签变体。
+upu-cn26-lc-l	CN 26	148	105	123、132	样张标注大号	bundle	水陆卡捆签	优先大号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			水陆优先卡捆大规格。
+upu-cn26-ao	CN 26	105	74	123、132	样张标注小号	bundle	水陆卡捆签	普通小号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			水陆普通卡捆；对应浅蓝签变体。
+upu-cn26-ao-l	CN 26	148	105	123、132	样张标注大号	bundle	水陆卡捆签	普通大号	From=扎捆台;To=分拣台;Via=转交台;Qty=成捆张数;Reference=关联封发;Operator=经办			水陆普通卡捆大规格。
+upu-cn26-r	CN 26	105	74	123、132	样张标注小号	bundle	水陆卡捆签	挂号小号	From=扎捆台;To=分拣台;Via=转交台;Qty=挂号张数;Reference=关联封发;Operator=经办			水陆挂号卡捆；对应粉色签变体。
+upu-cn26-r-l	CN 26	148	105	123、132	样张标注大号	bundle	水陆卡捆签	挂号大号	From=扎捆台;To=分拣台;Via=转交台;Qty=挂号张数;Reference=关联封发;Operator=经办			水陆挂号卡捆大规格。
+upu-cn27	CN 27	210	297	125	样张标注	table	保价卡件通路表		From=发布卡片局;Period=生效期;Date=登记日期;Currency=币种	manual	Country=目的地;Route=封发通路;Via=中转卡片局;Transport=运输方式;Limit=接收限额;Notes=交接限制	登记保价卡件可用中转路向和接收条件。
+upu-cn29	CN 29	37	18	229	样张标注三角底 × 高	mark	费用	三角提示贴				提示卡件有待结算的回寄费用。
+upu-cn29bis	CN 29bis	105	75	230	样张标注	slip	卡件交付费用签		From=结算卡片局;To=收件单位;Card=卡片号;Tracking=物流号码;Amount=应结金额;Currency=币种;Operator=经办;Date=交付日			随卡件列明应结费用及签收。
+upu-cn31	CN 31	210	297	136	样张标注	table	函件卡片总封清单		From=发封卡片局;To=寄达卡片局;Dispatch=总封号;Date=封发日;Transport=运别;Bag=袋号	bags	Bag=袋牌袋号;Class=分类;Qty+=卡片数;Weight+=毛重 kg;Seal=封志;Notes=备注	交换 QSL 函件总封的袋数和卡量。
+upu-cn32	CN 32	210	297	145	样张标注	table	大宗 QSL 交换清单		From=供卡单位;To=目的局;Dispatch=总封号;Period=批次;Bag=关联袋;Date=日期	cards	Card=卡片编号;CallTo=寄达呼号;Qso=通联 UTC;MHz=MHz;Mode=方式;Qty+=件数;Notes=备注	为一批大宗实体卡片列卡号与通联资料。
+upu-cn33	CN 33	210	297	139	样张标注	table	挂号 QSL 专用清单		From=发卡台;To=收卡台;Dispatch=发运总封;Bag=袋号;Date=制表日期	cards	Card=卡片编号;Tracking=物流号码;CallFrom=发卡呼号;CallTo=收卡呼号;Qso=通联 UTC;Rst=RST;Notes=签收标识	列挂号卡件及可查的真实物流号码。
+upu-cn34	CN 34	130	90	150	样张标注	bag	函件 QSL 袋牌	水陆	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			适用于水陆运送的函件卡袋。
+upu-cn35	CN 35	130	90	150	样张标注	bag	函件 QSL 袋牌	航空	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			适用于航空运送的函件卡袋。
+upu-cn36	CN 36	130	90	151	样张标注	bag	函件 QSL 袋牌	SAL	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			适用于 SAL 运送的函件卡袋。
+upu-cn37	CN 37	210	297	74	样张标注	table	水陆卡袋交接路单		From=交出卡片局;To=接收卡片局;Via=交接站;Date=交接日;Vehicle=车／船／班次;Operator=经办;Seal=封志;Departure=启运时刻;Unload=卸载点	bags	Dispatch=总封号;Bag=袋号;Origin=原节点;Destination=目的节点;Qty+=卡量;Weight+=kg;Notes=交接备考	登记水陆干线的卡袋交接。
+upu-cn38	CN 38	210	297	75	样张标注	table	航空卡袋交接路单		From=起运卡片局;To=到达卡片局;Via=中转站;Flight=航班;Date=交接日期;Operator=经办;Seal=封志;Departure=启运时刻;Unload=卸载点	bags	Dispatch=总封号;Bag=袋牌号;Origin=始发节点;Destination=目的节点;Class=袋别;Weight+=kg;Notes=签收备注	登记航空卡袋的机场、中转及交接顺序。
+upu-cn41	CN 41	210	297	76	样张标注	table	SAL 卡袋交接路单		From=交出局;To=接收局;Via=联运节点;Flight=航班／线路;Date=交接日期;Operator=经办;Seal=封志;Departure=启运时刻;Unload=卸载点	bags	Dispatch=总封号;Bag=袋号;Origin=始发节点;Destination=目的节点;Qty+=卡量;Weight+=kg;Notes=联运备考	记录 SAL 卡袋交接。
+upu-cn42	CN 42	148	90	70	样张标注	slip	航空直接转运签		From=起运卡片局;Via=换装节点;To=接收卡片局;Flight=转运航班;Bag=关联袋;Date=转运日期;Weight=重量 kg;Operator=经办			用在同一枢纽换装的卡袋。
+upu-cn43	CN 43	210	297	163	样张标注	notice	卡片总封交换验单	正面	Case=验单编号;From=开单卡片局;To=原封局;Dispatch=总封号;Bag=袋号;Seal=袋口封志;Date=开单日;Expected=应到卡量;Actual=实到卡量;CaseState=状态;Notes*=缺袋、封志或卡片差错;Attachment*=附证			记载总封交换差错、应到与实到。
+upu-cn43-back	CN 43	210	297	164	背面；沿用正面标注规格	notice	卡片总封交换验单	答复面	Case=验单编号;RelatedCase=关联原件;From=答复卡片局;To=发验局;Bag=关联袋;Operator=核查员;Date=答复日;Reply*=核查结果与处理决定;Attachment*=附证			闭环回复交换验单。
+upu-cn45	CN 45	229	162	78	样张标注封套外形	envelope	航空路单传递封套		From=发封卡片局;To=收单卡片局;Origin=始发站;Via=转运站;Flight=航班;Date=起运日期;Departure=起运时刻;Documents=随封 CN 38／41／47 号			装载航空、SAL 和空袋交接路单。
+upu-cn46	CN 46	210	297	81	样张标注	table	补制卡袋交接路单		From=补单卡片局;To=收交卡片局;Via=交接节点;Original=原路单编号;Reason=补制原因;Date=补制日期;Seal=封志;Departure=启运时刻;Unload=卸载点	bags	Dispatch=总封号;Bag=袋号;Qty+=袋内数量;Weight+=重量 kg;Received=接收时间;Notes=核对说明	正本路单缺失时补记可核实的数据。
+upu-cn47	CN 47	210	297	77	样张标注	table	退回空袋交接路单		From=退袋卡片局;To=收袋卡片局;Via=交接站;Date=退袋日期;Operator=经办;Seal=封志;Departure=启运时刻;Unload=卸载点	bags	Dispatch=总封号;Bag=退回袋号;EmptyQty+=空袋数量;Weight+=kg;Received=接收时间;Notes=袋况	分开记录退回空袋数量和袋况。
+upu-cn48	CN 48	210	297	383	样张标注	table	卡件损失补偿清算表		From=列账方;To=核对方;Period=账期;Currency=币种;Date=日期	manual	Case=查验单号;Card=卡片编号;Tracking=承运商号;Amount+=商定补偿;Credit+=已付;Notes=凭证／核查	结算卡片丢失或损坏后双方确认的补偿。
+upu-cn51	CN 51	210	297	498	样张标注	table	卡袋中转费用明细账		From=中转方;To=核对方;Period=账期;Currency=币种;Date=日期	manual	Dispatch=总封号;Via=中转节点;Transport=运输;Weight+=kg;Rate=约定单价;Amount+=中转费用	按中转节点和运输类别登记实际费用。
+upu-cn52	CN 52	210	297	499	样张标注	table	卡片局往来费用总账		From=立账卡片局;To=往来卡片局;Period=账期;Currency=币种;Date=日期	manual	Reference=原明细账编号;Nature=账项类型;Debit+=借方;Credit+=贷方;Balance+=账面差额;Notes=审核	把已核对的转运、退件与其他费用归入总账。
+upu-cn53	CN 53	297	210	517	样张标注	table	QSL 卡量抽样记录		From=抽样台;To=对照台;Period=抽样期;Direction=流向;Date=抽样日;Method=抽样方式	manual	Date=抽样日;Dispatch=样本总封;Class=类别;Qty+=抽中数;Weight+=重量 kg;Observed+=实点数;Notes=抽样条件	记录到袋后抽样结果、样本数和实点数。
+upu-cn54	CN 54	297	210	517	样张标注	table	QSL 卡量抽样汇总		From=汇总卡片局;To=对照局;Period=汇总期;Direction=流向;Date=报告日	manual	Reference=CN 53 号;Class=卡件分类;Qty+=样本量;Weight+=样本 kg;Estimated+=估计张数;Rate=张／kg	汇总封发抽样结果。
+upu-cn54bis	CN 54bis	297	210	518	样张标注	table	QSL 年度抽样汇总	项目明细	From=汇总台;To=复核台;Period=年度;Date=汇总日期	manual	Class=卡件分类;Reference=季度表号;Qty+=样本数;Estimated+=估计张数;Weight+=重量 kg;Rate=张／kg	汇总季度样本并记录年度估计。
+upu-cn54bis-back	CN 54bis	297	210	518	同号第二表，沿用主表标注	table	QSL 年度抽样汇总	总计与比率	From=汇总台;To=复核台;Period=年度;Date=签认日	manual	Class=格式／类别;Weight+=年度重量 kg;Qty+=年度张数;Rate=年度张／kg;Notes=说明	为 CN 61 报表留存汇总依据。
+upu-cn55	CN 55	297	210	520	样张标注	table	卡片交换总封统计		From=统计卡片局;To=核对卡片局;Period=统计期;Date=制表日	bags	Dispatch=总封编号;Transport=运别;Class=袋别;Qty+=卡量;Weight+=kg;Handover=交接时间	按 CN 31 总封记录逐封统计。
+upu-cn56	CN 56	297	210	521	样张标注	table	卡片交换汇总统计		From=汇总卡片局;To=核对局;Period=统计期;Date=汇总日	manual	Reference=CN 55 编号;Class=类别;Bags+=袋数;Qty+=张数;Weight+=重量 kg;Notes=备注	把交换统计按合作卡片局和类别汇总。
+upu-cn57	CN 57	297	210	527	样张标注	table	大宗卡片接收费用账		From=接收台;To=发运台;Period=账期;Currency=币种;Date=制表日期	manual	Reference=CN 32 编号;Transport=运输类别;Qty+=接收卡数;Weight+=kg;Rate=约定单价;Amount+=账面金额	把大宗接收卡片按批次复核记账。
+upu-cn57bis	CN 57bis	297	210	527	样张标注	table	大宗卡片往来决算		From=制表卡片局;To=合作卡片局;Period=年度／结算期;Currency=币种;Date=核签日	manual	Period=季度;Reference=CN 57 编号;Before+=原记金额;After+=核定金额;Balance+=差额;Notes=复核	大宗卡片往来账最后确认表。
+upu-cn60	CN 60	297	210	431	样张标注	table	附加处理服务季度账		From=服务卡片局;To=往来局;Period=季度;Currency=币种;Date=制表日	manual	Service=服务项目;Reference=凭证;Qty+=服务量;Rate=协议标准;Amount+=金额;Notes=审核说明	按季度记录双方认可的附加处理费用。
+upu-cn61	CN 61	210	297	531	样张标注	table	到达端分拣交付费用明细		From=到达端卡片局;To=合作卡片局;Period=账期;Currency=币种;Date=制表日期	manual	Reference=原账编号;Class=卡片类别;Qty+=卡片数;Weight+=kg;Rate=协议单价;Amount+=金额	按入站卡件处理量登记费用。
+upu-cn62	CN 62	210	297	533	样张标注	table	水陆转运费用明细		From=账单编制方;To=转运合作方;Period=账期;Currency=币种;Date=日期	manual	Route=水陆线路;Via=中转站;Reference=批次凭证;Weight+=重量 kg;Rate=协议费率;Amount+=费用	按水陆路段列实际中转账。
+upu-cn62bis	CN 62bis	210	297	535	样张标注	table	海运附加转运费用明细		From=记账台;To=海运协作台;Period=账期;Currency=币种;Date=制表日期	manual	Route=船线／航区;Voyage=航次;Dispatch=总封;Weight+=kg;Surcharge=附加费项目;Amount+=金额	记录海运分段附加费用。
+upu-cn64	CN 64	210	297	539	样张标注	table	到达端交付费用结算		From=列账台;To=往来卡片局;Period=结算期;Currency=币种;Date=记账日	manual	Reference=CN 61 原账;Class=业务类型;Debit+=借方;Credit+=贷方;Balance+=结算余额;Notes=复核	汇总各期到达端卡片处理账目。
+upu-cn64bis	CN 64bis	210	297	470	样张标注	table	卡片服务改进基金明细	计提	From=记账卡片局;To=基金往来方;Period=账期;Currency=币种;Date=日期	manual	Reference=项目／依据;Weight+=服务量 kg;Rate=约定计提比例;Amount+=计提金额;Notes=说明	卡片局自行记载与合作方约定的项目计提。
+upu-cn64ter	CN 64ter	210	297	471	样张标注	table	卡片服务改进基金明细	调整	From=核对台;To=往来方;Period=账期;Currency=币种;Date=日期	manual	Reference=原项目号;Before+=原计提;After+=核定数;Balance+=差额;Notes=调整依据	记录计提修正和签认。
+upu-cn65	CN 65	210	297	397	样张标注	table	错发与散件卡片重量单		From=补转卡片局;To=原发卡片局;Via=中转台;Date=重发日;Operator=经办	cards	Card=卡片号;CallTo=收卡呼号;Tracking=物流号码;Weight+=重量 kg;Reason=错发／散件;Notes=重发记录	按卡列错分和散件的再次转递。
+upu-cn66	CN 66	210	297	495	样张标注 210 × 297 mm	table	航空与 SAL 卡袋重量表		From=复发卡片局;To=原发卡片局;Period=统计期;Flight=运输班次;Date=日期	bags	Dispatch=总封号;Bag=袋号;Transport=运别;Via=复发点;Weight+=重量 kg;Notes=备注	按重发线路和运别汇总卡袋重量。
+upu-cn67	CN 67	210	297	496	样张标注 210 × 297 mm	table	散件卡片转运重量表		From=转发局;To=发运局;Period=统计期;Via=中转台站;Date=日期	manual	Route=接续路向;Class=优先／普通;Transport=运别;Qty+=件数;Weight+=重量 kg;Notes=说明	区分优先、航空和普通水陆的散件转运量。
+upu-cn69	CN 69	210	297	522	样张标注	table	闭封过境转运统计		From=过境卡片局;To=起运卡片局;Via=过境节点;Period=统计期;Date=列报日期	bags	Dispatch=总封号;Origin=发封节点;Destination=目的节点;Bag=袋号;Weight+=重量 kg;Notes=过境记录	登记不拆袋的过境交接记录。
+upu-cn70	CN 70	210	297	30	样张标注	notice	卡袋交运安检与保管交接记录		From=发封卡片局;To=接收单位;Reference=交运号;Bag=袋号;Seal=封志;Via=中转及交接点;Transport=运输方式;Check=封装检查结论;Date=交运日期;Operator=经办;Notes*=实物检查与保管情况;Attachment*=承运商附带凭据			供卡片局记录封装检查和人员交接。
+upu-cn71	CN 71	297	210	525	样张标注	table	未抽样卡片流量季度账		From=编制卡片局;To=合作卡片局;Period=季度;Currency=币种;Date=列账日	manual	Reference=CN 56 编号;Class=卡件类别;Qty+=全量卡数;Weight+=kg;Rate=协议价;Amount+=费用	记录未进行抽样的季度收卡量和账面费用。
+upu-cn71bis	CN 71bis	297	210	525	样张标注	table	未抽样卡片流量决算表		From=制表台;To=核对方;Period=决算期;Currency=币种;Date=签认日	manual	Reference=CN 71 编号;Period=季度;Before+=原记金额;After+=核定金额;Balance+=差额;Notes=依据	把季度账与最终协议金额对照复核。
+upu-cn72	CN 72	297	210	444	样张标注	table	无法交付卡片退回登记		From=退回卡片局;To=原寄卡片局;Period=报告期;Date=制表日期	cards	Card=卡片编号;CallTo=拟寄达呼号;Tracking=物流号码;Reason=未交付原因;Qty+=张数;Notes=退回安排	登记无主、退址和拒收的卡件。
+upu-cn73	CN 73	297	210	446	样张标注	table	无法交付卡片退回费用账		From=退件局;To=原发局;Period=账期;Currency=币种;Date=制表日	manual	Reference=CN 72 编号;Route=退回路向;Qty+=退卡张数;Weight+=重量 kg;Amount+=退回费用;Notes=凭证	与退回登记对照核销回寄费用。
+upu-cp72	CP 72	210	148	174	样张标注；原联单允许 ±5 mm	contents	卡片包件联单	交运联正面	From=发运卡片局;To=寄达卡片局;AddressFrom=始发名址;AddressTo=寄达名址;Reference=联单号;Tracking=物流号码;Date=交运日期;Treatment=未交付处理;Weight=包件毛重 kg	contents	Card=卡号;Material=内件说明;Qty+=件数;Value=登记价值;Country=地区	配套交运联；保留承运商物流号码。
+upu-cp72-back	CP 72	210	148	174	同一交运联背面；沿用原标规格	notice	卡片包件联单	交运联背面	Reference=联单号;Bag=关联袋号;Tracking=物流号码;Notes*=交运联补充记载;Attachment*=随附资料			原为复写联背面；供交接补记。
+upu-cp72-label	CP 72	210	148	175	样张标注；原联单允许 ±5 mm	envelope	卡片包件联单	包件地址联	From=发运卡片局;To=寄达台站;AddressFrom=寄件名址;AddressTo=寄达名址;Tracking=物流号码;Treatment=未交付处理			打印联单中的地址标贴联。
+upu-cp72-label-back	CP 72	210	148	175	同一包件地址联背面；沿用原标规格	notice	卡片包件联单	地址联背面	Reference=联单号;Card=关联卡片号;Tracking=物流号码;Notes*=寄达台补记;Attachment*=随单凭据			原为复写联背面；供地址变更注记。
+upu-cp72-customs	CP 72	204	144	176	样张标注；原联单允许 ±2 mm	contents	卡片包件联单	内件明细联	From=发运局;To=寄达局;AddressFrom=寄件名址;AddressTo=寄达名址;Tracking=物流号码;Currency=币种;Date=填报日期;Treatment=未交付处理	contents	Card=卡号;Material=包件内容;Qty+=数量;Weight+=净重 kg;Value=登记价值;Country=出发地区	联单中可分离的内件明细联。
+upu-cp72-customs-back	CP 72	204	144	176	同一内件明细联背面；沿用原标规格	notice	卡片包件联单	内件联背面	Reference=关联联单号;Tracking=物流号码;Operator=经办;Date=日期;Notes*=封装、退回及交接说明;Attachment*=随单资料			原样背面对应说明区。
+upu-cp73	CP 73	74	26	180	样张标注	item	QSL 包件号码签		ItemId=扫描编号;Card=关联卡号;CallTo=寄达呼号			在卡片包件外标记编号。
+upu-cp74	CP 74	74	26	224	样张标注	item	保价 QSL 包件签		ItemId=扫描编号;Card=关联卡号;Value=登记价值			区分需保价登记的卡片包件。
+upu-cp75	CP 75	210	297	543	样张标注	table	包件往来总账		From=汇总卡片局;To=合作卡片局;Period=清算期;Currency=币种;Date=制表日	manual	Reference=原账编号;Nature=费用类型;Debit+=应付;Credit+=应收;Balance+=差额;Notes=核销	汇总包件转运、退回和约定处理费用。
+upu-cp77	CP 77	105	148	328	样张标注	table	卡片包件费用清单		From=制单台;To=核对台;Tracking=物流号;Currency=币种;Date=日期	manual	Nature=收费项目;Amount+=金额;Receipt=凭证号;Notes=核对	随包件列自填的交运或处理费用。
+upu-cp78	CP 78	210	297	324	样张标注	notice	卡片包件验单	正面	Case=验单编号;From=开单卡片局;To=责任台;Dispatch=总封号;Bag=袋号;Tracking=物流号码;Date=验收日期;Expected=应到;Actual=实到;Notes*=外封、包件或交接差错;Attachment*=凭据			记录开袋和包件点验发现的差错。
+upu-cp78-back	CP 78	210	297	325	背面；沿用正面标注规格	notice	卡片包件验单	背面	Case=验单编号;From=答复局;To=发验局;Bag=袋号;CaseState=结案状态;Date=复核日;Reply*=差错确认及处置意见;Attachment*=签收与补寄记录			确认差错、补寄和复核结果。
+upu-cp81	CP 81	297	210	184	样张标注	table	水陆包件交换通路表		From=公布卡片局;Period=生效日期;Date=制表日;Currency=币种	manual	Country=目的地区;Route=水陆路由;Via=中转局;Limit=重量上限;Fee=费用说明;Notes=交接条件	登记接收本地及跨区水陆包件的条件。
+upu-cp82	CP 82	297	210	184–185	样张标注	table	航空包件交换通路表		From=公布卡片局;Period=生效日期;Date=制表日;Currency=币种	manual	Country=目的地区;Flight=航线;Via=中转卡片局;Limit=重量上限;Fee=约定费用;Notes=收件限制	登记支持空运的目的地及中转条件。
+upu-cp82-back	CP 82	297	210	185	同一通路表续页，沿用主表标注	table	航空包件交换通路表	目的地续表	From=公布卡片局;Period=生效日期;Route=接续路线;Date=制表日	manual	Country=目的地区;Flight=接续航班;Via=落地中转;Limit=重量约束;Fee=费用说明;Notes=接驳条件	保留复杂路由的续表及到达端条件。
+cp83large	CP 83	130	90	195	样张标注	bag	包裹 QSL 袋牌	水陆	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			水陆包件原规格袋牌及内部袋号条码。
+cp84large	CP 84	130	90	196	样张标注	bag	包裹 QSL 袋牌	航空	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			航空包件原规格袋牌及内部袋号条码。
+cp85large	CP 85	130	90	196	样张标注	bag	包裹 QSL 袋牌	SAL	From=原寄卡片局;To=接收卡片局;Transport=运输方式;Origin=起始节点;Destination=目的节点;Date=封发日;Dispatch=总封号 S8;Qty=卡片数;Weight=重量 kg;Seal=封志;Via=中转台;Class=袋类别;Bag=袋号 S9;DispatchType=总封类别;BagType=容器类型;BagNo=袋序;Departure=发运日期;Vehicle=车辆／班次;Unload=卸载台;Tracking=物流号码			SAL 包件原规格袋牌及内部袋号条码。
+upu-cp87	CP 87	210	297	200	样张标注 210 × 297 mm	table	卡片包件封发清单		From=发运卡片局;To=寄达卡片局;Dispatch=总封号;Bag=袋号;Date=封发日期;Transport=运别	cards	Card=卡片编号;CallTo=收卡呼号;Tracking=物流号码;Class=类别;Qty+=张数;Value=登记价值;Notes=特殊事项	列封内卡片、包件件数和追溯号码。
+upu-cp88	CP 88	210	148	201	样张标注	table	过境包件清单与费用表		From=始发卡片局;Via=过境局;To=接收台;Dispatch=总封号;Currency=币种;Date=交接日期	manual	Route=过境路段;Transport=运别;Qty+=件数;Weight+=kg;Rate=协议单价;Amount+=费用	按过境段列包件数量与实际费用。
+upu-cp91	CP 91	215	170	204	样张外尺寸；内 205 × 160 mm，襟 50 mm	envelope	包件联单文件封套	大号	From=发文卡片局;To=接收卡片局;Dispatch=总封号;Bag=袋号;Documents=联单及随附资料;Date=封套日期			按原封套外尺寸输出正面。
+upu-cp92	CP 92	170	130	204	样张外尺寸；内 155 × 115 mm，襟 50 mm	envelope	包件联单文件封套	小号	From=发文卡片局;To=接收卡片局;Dispatch=总封号;Bag=袋号;Documents=联单及随附资料;Date=封套日期			小号联单或随附凭据封套正面。
+upu-cp94	CP 94	210	297	544	样张标注	table	包件应结费用统计		From=立账卡片局;To=往来卡片局;Period=统计期;Currency=币种;Date=制表日期	manual	Country=路向;Reference=费用凭证;Qty+=包件数;Weight+=kg;Amount+=金额;Notes=核签	汇总按张数或包件记账的双方应结金额。
+upu-cp94bis	CP 94bis	297	210	545	样张标注	table	包件分重量档应结费用统计		From=立账卡片局;To=往来卡片局;Period=统计期;Currency=币种;Date=填报日期	manual	Bracket=重量档 kg;Route=线路;Qty+=包件数;Weight+=kg;Rate=档费;Amount+=金额;Notes=核签	按协议的重量区间列数量、单价和应付额。
+upu-cp95	CP 95	100	50	230	样张标注	mark	包件费用待结	费用提示贴	Reference=包件编号;Amount=应结金额;Currency=币种			清楚标识需要核对的包件费用。

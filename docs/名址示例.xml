@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Contact>
+  <Callsign>DEMO/A</Callsign>
+  <Name>示例台站</Name>
+  <Address>示例省示例市示例路 1 号</Address>
+  <PostalCode>000000</PostalCode>
+  <Phone>000-0000-0000</Phone>
+  <Email>example@example.com</Email>
+  <EnglishName>Example Radio Station</EnglishName>
+  <EnglishAddress>1 Example Road, Example City</EnglishAddress>
+</Contact>

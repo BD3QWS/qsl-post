@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T04:25:52Z",
+  "title": "Design System: QSL 邮务台",
+  "extensions": {
+    "colorMeta": {
+      "blue": { "role": "primary", "displayName": "邮务蓝" },
+      "backdrop-blue": { "role": "neutral", "displayName": "浅蓝背景" },
+      "backdrop-lavender": { "role": "neutral", "displayName": "淡紫背景" },
+      "ink": { "role": "neutral", "displayName": "深蓝墨色" },
+      "quiet": { "role": "neutral", "displayName": "灰蓝辅助文字" },
+      "table-selected": { "role": "neutral", "displayName": "台账选中浅蓝" },
+      "preview-matte": { "role": "neutral", "displayName": "纸张预览蓝灰底" }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "工作区标题", "purpose": "主窗口当前工作区名称。" },
+      "title": { "displayName": "详情标题", "purpose": "选中卡片的联系方向。" },
+      "body": { "displayName": "通用控件", "purpose": "按钮、导航和输入。" },
+      "table-body": { "displayName": "台账列值", "purpose": "呼号、编号、时间和状态。" },
+      "label": { "displayName": "字段标签", "purpose": "表头和打印设置字段。" }
+    },
+    "shadows": [
+      {
+        "name": "glass-panel-shadow",
+        "value": "0 3px 0 #39587910",
+        "purpose": "玻璃容器底影的网页预览。GDI+ 在 (2, 4, Width−4, Height−5) 绘制同色圆角底影。"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "主要按钮",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "蓝色渐变、白字和细亮边，用于登记、导出 PDF 等主要操作。",
+      "html": "<button type=\"button\" class=\"ds-button-primary\">登记卡片</button>",
+      "css": ".ds-button-primary{min-width:94px;height:38px;padding:0 9px;border:1px solid #cdeeff7d;border-radius:16px;background:linear-gradient(180deg,#3171c6,#174d9a);color:#fff;font:10pt 'Microsoft YaHei UI';cursor:pointer}.ds-button-primary:hover{background:linear-gradient(180deg,#4282d9,#1f5cb2)}.ds-button-primary:focus-visible{outline:1px dotted #fff;outline-offset:-5px}.ds-button-primary:disabled{color:#768697}"
+    },
+    {
+      "name": "次要按钮",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "半透明渐变、深蓝文字和细白边，用于修改或补充操作。",
+      "html": "<button type=\"button\" class=\"ds-button-secondary\">修改</button>",
+      "css": ".ds-button-secondary{min-width:94px;height:38px;padding:0 9px;border:1px solid #ffffffcd;border-radius:16px;background:linear-gradient(180deg,#ffffffcd,#ecf4ffae);color:#193048;font:10pt 'Microsoft YaHei UI';cursor:pointer}.ds-button-secondary:hover{background:linear-gradient(180deg,#fff,#e0efff)}.ds-button-secondary:focus-visible{outline:1px dotted #1c5bb3;outline-offset:-5px}.ds-button-secondary:disabled{color:#768697}"
+    },
+    {
+      "name": "导航项",
+      "kind": "nav",
+      "refersTo": "navigation-item",
+      "description": "固定宽度的侧栏按钮配线描图标，浅蓝渐变标示当前工作区。",
+      "html": "<button type=\"button\" class=\"ds-nav-item\" aria-current=\"page\"><svg aria-hidden=\"true\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"17\" height=\"14\"/><path d=\"M3 8h17M7 12h9M7 16h5\"/></svg>卡片台账</button>",
+      "css": ".ds-nav-item{display:flex;align-items:center;gap:10px;width:156px;height:46px;padding:0 9px 0 15px;border:1px solid #ffffffcd;border-radius:16px;background:linear-gradient(180deg,#ffffffcd,#ecf4ffae);color:#193048;font:10pt 'Microsoft YaHei UI';cursor:pointer}.ds-nav-item[aria-current=page]{background:linear-gradient(180deg,#f5fdff,#daecff)}.ds-nav-item:hover{background:linear-gradient(180deg,#fff,#e0efff)}.ds-nav-item:focus-visible{outline:1px dotted #1c5bb3;outline-offset:-5px}"
+    },
+    {
+      "name": "扫码输入框",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "方角白底的原生文本框，说明文字放在下方。",
+      "html": "<label class=\"ds-scanner\"><input aria-label=\"扫码或搜索编号\"><span>扫码 / 输入卡号、袋号或物流号后回车</span></label>",
+      "css": ".ds-scanner{display:block;width:300px;max-width:100%;color:#4a5f75;font:8pt 'Microsoft YaHei UI'}.ds-scanner input{display:block;box-sizing:border-box;width:100%;height:30px;border:1px solid GrayText;background:#fff;color:#193048;font:10pt 'Microsoft YaHei UI'}.ds-scanner span{display:block;margin-top:6px}"
+    },
+    {
+      "name": "玻璃容器",
+      "kind": "card",
+      "refersTo": "glass-panel",
+      "description": "工作区和导航外层使用半透明白色渐变、细高光和低透明度底影。",
+      "html": "<section class=\"ds-glass-panel\"><strong>袋内卡片</strong></section>",
+      "css": ".ds-glass-panel{padding:18px;border:1px solid #ffffffe6;border-radius:18px;background:linear-gradient(180deg,#ffffffd3,#f5faffa5);color:#193048;font:11pt 'Microsoft YaHei UI';box-shadow:0 3px 0 #39587910}"
+    },
+    {
+      "name": "台账表格",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "实底表头、交替行和整行选中填充。",
+      "html": "<table class=\"ds-ledger\"><thead><tr><th scope=\"col\">卡片编号</th><th scope=\"col\">状态</th></tr></thead><tbody><tr class=\"ds-selected\"><td>QSL-20261118-000047</td><td>待封发</td></tr><tr><td>QSL-20261118-000046</td><td>待封发</td></tr><tr><td>QSL-20261118-000045</td><td>待封发</td></tr></tbody></table>",
+      "css": ".ds-ledger{width:100%;border-collapse:collapse;background:#f6fafe;color:#193048;font:9.5pt 'Microsoft YaHei UI'}.ds-ledger th{height:39px;padding:0 0 0 8px;background:#e8f0fa;color:#4a5f75;text-align:left;font-size:9pt;font-weight:700}.ds-ledger td{height:37px;padding:0 2px 0 7px;border-bottom:1px solid #e3ebf4;background:#f9fcff}.ds-ledger tr:nth-child(even) td{background:#f1f7fd}.ds-ledger tr.ds-selected td{background:#d6e8fe;color:#124077}"
+    }
+  ],
+  "narrative": {
+    "northStar": "现代液态玻璃",
+    "overview": "延续 QSL 卡片工坊和肥龙量化的 Windows 桌面风格。浅蓝到淡紫的底色贯穿窗口，半透明白色工作面承托台账和表单。深蓝标题和大面积实底让呼号、编号和状态可以连续扫读。",
+    "keyCharacteristics": [
+      "玻璃导航、工具栏按钮和容器使用细白边。",
+      "表格、下拉框和页面预览使用实底。",
+      "单据使用白纸、黑字和细表线，保留实际纸张比例。"
+    ],
+    "rules": [
+      { "name": "The Opaque Tables Rule", "body": "表头、普通行、交替行和选中行使用不透明底色。", "section": "colors" },
+      { "name": "The Paper Preview Rule", "body": "纸面保持黑白单据样式，玻璃效果用于预览周围的界面。", "section": "elevation" }
+    ],
+    "dos": [
+      "Do 为新台账沿用不透明表头、交替行和整行选中态。",
+      "Do 在打印界面保留纸张尺寸、缩放和页码，并按实际尺寸绘制单据。"
+    ],
+    "donts": []
+  }
+}

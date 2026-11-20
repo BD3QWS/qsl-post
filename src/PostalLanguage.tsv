@@ -1,0 +1,418 @@
+# Clef 	 français 	 English
+CN 01	Coupon-réponse QSL	QSL reply coupon
+CN 03	Relevé détaillé des coupons QSL échangés	Detailed statement of QSL coupons redeemed
+CN 04	QSL recommandé	Registered QSL
+CN 05bis	QSL suivi	Tracked QSL
+CN 06	QSL à valeur déclarée	Insured QSL
+CN 07	Avis de réception, de remise ou d'inscription QSL	QSL advice of receipt, delivery or entry
+CN 08	Réclamation QSL	QSL inquiry
+upu-cn08-receipt	Récépissé de dépôt d'une réclamation QSL	Receipt for QSL inquiry lodged
+CN 09	Relevé des réponses QSL prépayées expédiées	Statement of prepaid QSL replies dispatched
+CN 10	Relevé récapitulatif des réponses QSL prépayées	Recapitulative statement of prepaid QSL replies
+CN 11	Bulletin de versement des frais de retour QSL	QSL return fee payment note
+CN 12	Compte mensuel détaillé des avances QSL	Detailed monthly account of QSL advances
+CN 13	Procès-verbal de mise en instance d'un envoi QSL	Report of a held QSL item
+CN 14	Enveloppe collective de réexpédition QSL	QSL collective redirection envelope
+CN 15	Retour des QSL	Return QSL
+CN 16	Liste spéciale des QSL à valeur déclarée	Special list of insured QSL cards
+CN 17	Demande de retrait, de correction d'adresse ou de frais	Request for withdrawal, address or charge correction
+CN 18	Déclaration de réception ou de non-réception QSL	Declaration of receipt or non-receipt of a QSL
+CN 19	Compte détaillé des frais de réponse QSL	Detailed account of prepaid QSL reply charges
+CN 20	Relevé des frais de réponse QSL	Statement of prepaid QSL reply charges
+CN 21	Avis de réacheminement d'une réclamation CN 08	Advice of redirection of a CN 08 inquiry
+CN 22	Déclaration sommaire du contenu QSL	Short QSL contents declaration
+CN 23	Déclaration détaillée du contenu QSL	Detailed QSL contents declaration
+CN 24	Procès-verbal d'irrégularité d'un envoi QSL déclaré	Irregularity report for a declared-value QSL item
+CN 25	Étiquette de liasse QSL par avion	Airmail QSL bundle label
+CN 25 transit	Étiquette de liasse QSL en transit à découvert	Airmail label for QSL bundles in open transit
+CN 26	Étiquette de liasse QSL de surface	Surface QSL bundle label
+CN 27	Tableau des voies pour les envois QSL à valeur déclarée	Route table for declared-value QSL items
+CN 29	Frais QSL	QSL fees
+CN 29bis	Étiquette de remise QSL avec frais	QSL delivery fee label
+CN 31	Feuille d'avis pour la dépêche QSL	QSL letter-mail despatch bill
+CN 32	Feuille d'avis pour les QSL en nombre	QSL bulk letter-mail despatch bill
+CN 33	Liste spéciale des QSL recommandés	Special list of registered QSL cards
+CN 34	Étiquette de sac QSL de surface	Surface QSL letter receptacle label
+CN 35	Étiquette de sac QSL par avion	Airmail QSL letter receptacle label
+CN 36	Étiquette de sac QSL S.A.L.	S.A.L. QSL letter receptacle label
+CN 37	Bordereau de remise des dépêches QSL de surface	Surface QSL delivery bill
+CN 38	Bordereau de remise des dépêches-avion QSL	Airmail QSL delivery bill
+CN 41	Bordereau de remise des dépêches QSL S.A.L.	S.A.L. QSL delivery bill
+CN 42	Transbordement direct des dépêches QSL	Direct transfer of QSL mails
+CN 43	Bulletin de vérification des dépêches QSL	QSL mail exchange verification note
+CN 45	Enveloppe de transmission des bordereaux QSL	Transmission envelope for QSL delivery bills
+CN 46	Bordereau de remise QSL de remplacement	Substitute QSL delivery bill
+CN 47	Bordereau de remise des sacs QSL vides	Delivery bill for empty QSL receptacles
+CN 48	Relevé des indemnités pour les envois QSL	Statement of QSL indemnities due
+CN 51	Compte détaillé des frais de transit des dépêches QSL	Detailed account of QSL transit charges
+CN 52	Compte général des échanges QSL	General account for QSL exchanges
+CN 53	Relevé d'échantillonnage QSL	QSL sampling statement
+CN 54	Relevé récapitulatif de l'échantillonnage QSL	Recapitulative QSL sampling statement
+CN 54bis	Relevé récapitulatif annuel de l'échantillonnage QSL	Annual recapitulative QSL sampling statement
+CN 55	Relevé des dépêches QSL	Statement of QSL mails
+CN 56	Relevé récapitulatif des dépêches QSL	Recapitulative statement of QSL mails
+CN 57	Compte des QSL en nombre reçus	Account for bulk QSL mail received
+CN 57bis	Compte définitif des QSL en nombre	Final account for bulk QSL mail
+CN 60	Compte trimestriel détaillé des services QSL supplémentaires	Quarterly detailed account of supplementary QSL services
+CN 61	Compte détaillé des frais de distribution QSL	Detailed account of destination QSL handling dues
+CN 62	Compte détaillé du transit de surface QSL	Detailed account of QSL surface transit charges
+CN 62bis	Compte détaillé des frais QSL de transit maritime supplémentaire	Detailed account of additional QSL sea transit charges
+CN 64	Relevé des frais de distribution QSL	Statement of QSL destination handling dues
+CN 64bis	Relevé détaillé du fonds d'amélioration QSL	Detailed statement of the QSL improvement fund
+CN 64ter	Relevé d'ajustement du fonds d'amélioration QSL	Adjustment statement of the QSL improvement fund
+CN 65	Bulletin de poids des QSL mal dirigés et à découvert	Weight bill for missent and open-transit QSL items
+CN 66	Relevé des poids des dépêches QSL par avion et S.A.L.	Weight statement for QSL airmails and S.A.L. mails
+CN 67	Relevé des poids des envois QSL en transit à découvert	Weight statement for QSL items in open transit
+CN 69	Relevé des dépêches QSL en transit clos	Statement of QSL mails in closed transit
+CN 70	Déclaration de sûreté et de remise du lot QSL	QSL consignment security and custody record
+CN 71	Compte trimestriel des flux QSL reçus sans échantillonnage	Quarterly account of received non-sampled QSL flows
+CN 71bis	Compte définitif des flux QSL sans échantillonnage	Final account of non-sampled QSL flows
+CN 72	Relevé du retour des QSL non distribuables	Statement of return of undeliverable QSL cards
+CN 73	Compte du retour des QSL non distribuables	Account of returns of undeliverable QSL cards
+CP 72	Liasse d'expédition d'un colis QSL	QSL parcel despatch manifold
+CP 73	Étiquette numérotée d'un colis QSL	QSL parcel number label
+CP 74	Colis QSL à valeur déclarée	Insured QSL parcel
+CP 75	Compte récapitulatif des colis QSL	Summarized QSL parcel account
+CP 77	Décompte des frais d'un colis QSL	Statement of QSL parcel charges
+CP 78	Bulletin de vérification des colis QSL	QSL parcel verification note
+CP 81	Tableau des voies pour les colis QSL de surface	Route table for surface QSL parcels
+CP 82	Tableau des voies pour les colis-avion QSL	Route table for air QSL parcels
+CP 83	Étiquette de sac de colis QSL de surface	Surface QSL parcel receptacle label
+CP 84	Étiquette de sac de colis-avion QSL	Airmail QSL parcel receptacle label
+CP 85	Étiquette de sac de colis QSL S.A.L.	S.A.L. QSL parcel receptacle label
+CP 87	Feuille de route des colis QSL	QSL parcel bill
+CP 88	Feuille de route spéciale des colis QSL en transit	Special bill for QSL parcels in transit
+CP 91	Enveloppe pour documents de colis QSL	Envelope for QSL parcel documents
+CP 92	Enveloppe pour documents de colis QSL	Envelope for QSL parcel documents
+CP 94	Relevé des sommes dues pour les colis QSL	Statement of amounts due for QSL parcels
+CP 94bis	Relevé des sommes dues par tranche de poids	QSL amounts due by weight bracket
+CP 95	Colis QSL avec frais à vérifier	QSL parcel fees due for review
+upu-cn05bis-prio	Prioritaire / Par avion	Priority / By air
+upu-cn06-mark	Valeur déclarée	Insured
+:发券面	Émission	Issue
+:兑付面	Échange	Redemption
+:配套提示贴	Mention auxiliaire	Auxiliary marking
+:副标	Mention complémentaire	Auxiliary label
+:正面	Recto	Front
+:背面	Verso	Reverse
+:A/B 折叠联	Volets A et B à plier	Folded parts A and B
+:退件贴	Étiquette de retour	Return label
+:申请面	Demande	Request
+:答复面	Réponse	Reply
+:最小规格	Petit format	Small format
+:最大规格	Grand format	Large format
+:背面小号	Verso, petit format	Small-format reverse
+:背面大号	Verso, grand format	Large-format reverse
+:优先小号	Prioritaire, petit	Priority, small
+:优先大号	Prioritaire, grand	Priority, large
+:普通小号	Ordinaire, petit	Ordinary, small
+:普通大号	Ordinaire, grand	Ordinary, large
+:挂号小号	Recommandé, petit	Registered, small
+:挂号大号	Recommandé, grand	Registered, large
+:三角提示贴	Mention triangulaire	Triangle marking
+:水陆	Surface	Surface
+:航空	Par avion	Airmail
+:SAL	S.A.L. (surface par avion)	S.A.L. (surface airlifted)
+:项目明细	Détail par poste	Detail by category
+:总计与比率	Total et ratio	Totals and ratios
+:计提	Provision	Accrual
+:调整	Régularisation	Adjustment
+:交运联正面	Bulletin d'expédition, recto	Despatch note, front
+:交运联背面	Bulletin d'expédition, verso	Despatch note, reverse
+:包件地址联	Étiquette d'adresse	Parcel address label
+:地址联背面	Étiquette d'adresse, verso	Address label, reverse
+:内件明细联	Déclaration du contenu	Contents declaration
+:内件联背面	Déclaration du contenu, verso	Contents declaration, reverse
+:目的地续表	Tableau des destinations, suite	Destination table, continued
+:大号	Grand format	Large format
+:小号	Petit format	Small format
+:费用提示贴	Mention de frais	Fee marking
+Actual	Nombre constaté	Actual count
+AddressFrom	Nom et adresse de l'expéditeur	Sender's name and address
+AddressTo	Nom et adresse du destinataire	Addressee's name and address
+AddressTo@改寄地址	Adresse de réexpédition	Forwarding address
+After	Montant révisé	Revised amount
+Amount	Montant	Amount
+Attachment	Pièces jointes	Enclosures
+Bag	Identifiant du sac	Bag identifier
+Bag@袋号 S9	Identifiant S9	S9 bag ID
+BagNo	Nº du sac	Bag no.
+BagType	Type de sac	Bag type
+Bags	Nombre de sacs	Bag count
+Balance	Solde	Balance
+Before	Montant initial	Original amount
+Bracket	Tranche de poids	Weight bracket
+CallFrom	Indicatif d'origine	Origin call sign
+CallTo	Indicatif de destination	Destination call sign
+Card	Nº QSL	QSL ID
+Case	Nº du dossier	Case reference
+CaseState	État du dossier	Case status
+Category	Catégorie	Category
+Check	Contrôle	Inspection
+Class	Sous-classe	Subclass
+Country	Pays ou région	Country or region
+Credit	Crédit	Credit
+Currency	Devise	Currency
+Date	Date	Date
+Date@发券日	Date d'émission	Date of issue
+Date@制表日期	Date d'établissement	Date prepared
+Date@封发日	Date de dépêche	Despatch date
+Date@交接日	Date de remise	Handover date
+Date@发查日期	Date de réclamation	Inquiry date
+Date@答复日期	Date de réponse	Reply date
+Date@抽样日	Date du prélèvement	Sampling date
+Date@兑付日期	Date de l'échange	Redemption date
+Debit	Débit	Debit
+Decision	Décision	Decision
+Departure	Départ	Departure
+Destination	Nœud de destination	Destination node
+Direction	Sens du flux	Direction
+Dispatch	Nº de dépêche	Despatch no.
+Dispatch@总封号 S8	Nº S8	S8 despatch ID
+DispatchType	Catégorie de dépêche	Despatch category
+Documents	Documents joints	Documents enclosed
+EmptyQty	Sacs vides	Empty bags
+Estimated	Nombre estimé	Estimated count
+Evidence	Justificatifs	Evidence
+Expected	Nombre attendu	Expected count
+Expires	Valable jusqu'au	Valid until
+Fee	Frais	Fees
+Flight	Vol ou trajet	Flight or route
+From	Origine	Origin
+From@扎捆台	Bureau formant la liasse	Bundling bureau
+From@发单卡片局	Bureau émetteur	Issuing bureau
+From@开单卡片局	Bureau émetteur	Issuing bureau
+From@原寄卡片局	Bureau d'origine	Origin bureau
+From@发封卡片局	Bureau expéditeur	Despatching bureau
+Handover	Heure de remise	Handover time
+ItemId	Identifiant de suivi	Tracking ID
+Limit	Limite d'admission	Acceptance limit
+MHz	Fréquence (MHz)	Frequency (MHz)
+Material	Description du contenu	Contents description
+Method	Méthode	Method
+Mode	Mode	Mode
+Nature	Nature	Type
+Net	Nombre net	Net count
+NewAddress	Nouvelle adresse	New address
+Notes	Observations	Remarks
+Notes@待核查事项	Motif de réclamation	Inquiry details
+Notes@缺袋、封志或卡片差错	Sacs, scellés et QSL irréguliers	Bag, seal and card irregularities
+Observed	Nombre constaté	Observed count
+Operator	Agent	Handling clerk
+Origin	Nœud d'origine	Origin node
+Original	Nº de l'original	Original reference
+Period	Période	Period
+Qso	Date et heure du QSO (UTC)	QSO date and time (UTC)
+Qty	Nombre	Count
+Rate	Tarif unitaire	Unit rate
+Reason	Motif	Reason
+Receipt	Nº du justificatif	Voucher no.
+Receive	Reçu	Received
+Received	Réception	Receipt date
+Reference	Référence	Reference
+RelatedCase	Référence initiale	Original case
+Remedy	Suite donnée	Action taken
+Reply	Réponse	Reply
+Request	Demande	Request
+Route	Voie d'acheminement	Route
+Rst	RST émis / reçu	RST sent / received
+Seal	Scellé	Seal
+Service	Prestation	Service
+Sign	Signature	Signature
+Subject	Objet	Subject
+Surcharge	Supplément	Surcharge
+To	Destination	Destination
+To@寄达卡片局	Bureau de destination	Destination bureau
+To@接收卡片局	Bureau destinataire	Receiving bureau
+Tracking	Nº de suivi	Tracking no.
+Transport	Transport	Transport
+Trouble	Irrégularité	Irregularity
+Treatment	En cas de non-remise	If undelivered
+Unload	Déchargement	Unloading
+Unused	Retours	Returns
+Value	Valeur déclarée	Declared value
+Vehicle	Train, navire ou véhicule	Train, ship or vehicle
+Via	Via / Transit	Via / Transit
+Voyage	Voyage	Voyage
+Weight	Poids (kg)	Weight (kg)
+DayStamp	Timbre à date	Date stamp
+DispatchStamp	Timbre expéditeur	Despatch stamp
+ReceiveStamp	Timbre d'arrivée	Arrival stamp
+FromSign	Signature de l'expéditeur	Despatch clerk's signature
+ToSign	Signature du destinataire	Receiving clerk's signature
+CarrierSign	Signature du transporteur	Carrier's signature
+Page	Page	Page
+Position	Nº	No.
+Position@格	Nº	No.
+Position@格数	Nº	No.
+IndexNumber	Nº de série	Serial no.
+Total	Total	Total
+Subtotal	Sous-total	Page subtotal
+Registered	Recommandé	Registered
+Ordinary	Ordinaire	Ordinary
+PrintedMatter	Imprimé	Printed
+Tracked	Suivi	Tracked
+Insured	Déclaré	Insured
+Empty	Sacs vides	Empty bags
+Untracked	Non suivi	Untracked
+Combined	Groupé	Consolidated
+Priority	Prioritaire	Priority
+NonPriority	Non prioritaire	Non-priority
+Surface	Voie de surface	Surface
+Air	Par avion	By air
+Sal	Par S.A.L.	By SAL
+Content	Contenu	Contents
+Special	Mentions spéciales	Special indications
+Equipment	Matériel	Equipment
+Power	Puissance	Power
+Antenna	Antenne	Antenna
+Fax	Télécopie	Fax
+Mailing	Dépôt	Posting
+DraftCopy	Date du duplicata	Duplicate date
+Office	Bureau	Office
+Photo	Photographie	Photograph
+Response	Réponse des services	Response
+Grid	Locator	Grid
+TableRows	Inscriptions	Entries
+BodySignature	Date et signature	Date and signature
+DateTime	Date et heure	Date and time
+SignatureDate	Date / Signature	Date / Signature
+Cut	Couper	Cut
+Fold	Pli	Fold
+ReturnTo	Retour à	Return to
+Internal	Échanges QSL entre radioamateurs	Amateur-radio QSL exchange
+ReasonUndelivered	Non reçu	Not received
+Delivered	Remis	Delivered
+Returned	Renvoyé	Returned
+Resend	Réexpédier	Resend
+Incorrect	Données erronées	Incorrect data
+Confirmed	Confirmé	Confirmed
+Partial	Partiel	Partial
+Pending	Non confirmé	Unconfirmed
+PartOrigin	À remplir par le bureau expéditeur	To be completed by the originating bureau
+PartTransit	À remplir par le bureau de transit	To be completed by the transit bureau
+PartDestination	À remplir par le bureau destinataire	To be completed by the destination bureau
+PartSummary	Récapitulation	Summary
+PartBulk	Inscriptions globales	Bulk entry
+PartDetail	Inscriptions détaillées	Detailed entry
+PartIdentification	Identification de la dépêche	Despatch identification
+PartItems	Identification des envois QSL	QSL item identification
+PartTransfer	Acheminement et remise	Routing and handover
+PartIntake	Réception de la réclamation	Inquiry intake
+PartRecording	QSO et écoute (SWL)	QSO and shortwave listening
+PartDiscrepancy	Irrégularités constatées	Irregularities found
+PartHandling	Mesures prises	Action taken
+PartAudit	Contrôle et visa	Review and approval
+PartAmounts	Sommes et solde	Amounts and balance
+PartBasis	Décomptes de base	Supporting bills
+PartSample	Caractéristiques du prélèvement	Sampling details
+PartRoutes	Voies et conditions de transit	Routes and transit conditions
+PartWeight	Poids par catégorie	Weight by category
+PartDeclare	Déclaration et visa	Declaration and signature
+PartAddress	Adresse de remise	Delivery address
+PartRules	Consignes de traitement	Handling instructions
+PartOriginCheck	Contrôle au départ	Origin check
+PartDestinationCheck	Contrôle à l'arrivée	Destination check
+PartAmountBefore	Montant initial	Opening amount
+PartAmountAfter	Montant définitif	Final amount due
+PartReport	Constat et déclaration	Report and declaration
+PartOriginal	Exemplaire d'origine	Original copy
+PartRemedy	Réexpédition et clôture	Resend and closure
+PartHandover	Remise et contrôle	Handover and checking
+Prelude	Renseignements généraux	General information
+Manifest	Liste des cartes QSL expédiées	QSL despatch list
+Waybill	Bordereau de remise des cartes QSL	QSL delivery bill
+Verify	Bulletin de vérification QSL	QSL verification note
+ReplyTitle	Réponse au bulletin de vérification QSL	Reply to QSL verification note
+DomesticQuery	Réclamation QSL nationale	Domestic QSL inquiry
+DomesticReply	Réponse à la réclamation QSL nationale	Domestic QSL inquiry reply
+InternationalQuery	Réclamation QSL internationale	International QSL inquiry
+InternationalReply	Réponse à la réclamation QSL internationale	International QSL inquiry reply
+LocalReceipt	Récépissé de remise QSL	QSL handover receipt
+LocalDeclaration	Déclaration de non-réception QSL	QSL non-receipt declaration
+LocalCardBarcode	Étiquette d'identification QSL	QSL identifier label
+LocalDispatchBarcode	Code-barres de dépêche S8	S8 despatch barcode
+LocalBagBarcode	Code-barres de sac S9	S9 receptacle barcode
+Annex	Feuille supplémentaire	Continuation sheet
+Clerk	Agent chargé du dossier	Clerk in charge
+Supervisor	Responsable	Supervisor
+Direct	Transbordement direct	Direct transfer
+CouponIssue	Timbre du bureau d'émission	Stamp of issuing bureau
+CouponExchange	Timbre du bureau d'échange	Stamp of redeeming bureau
+Acknowledge	Accusé de réception	Advice of receipt
+FollowUp	État et suite donnée	Status and follow-up
+Leg	Trajet	Leg
+ExpectedWeight	Poids annoncé	Declared weight
+ActualWeight	Poids constaté	Measured weight
+PartMissent	Retour et réexpédition	Return and redirection
+HandlingState	État de traitement	Handling state
+NoTransfer	Aucun transbordement	No direct transfer
+SendingDate	Date d'envoi	Date sent
+ReceivedDate	Date de réception	Date received
+UnloadedDate	Date de déchargement	Unloading date
+Copy	Exemplaire	Copy
+Distribution	Distribution	Distribution
+Station	Station radio	Radio station
+Bureau	Bureau QSL	QSL bureau
+Channel	Canal de remise	Handover channel
+QsoKind	Type de confirmation	Confirmation type
+Clause	Rubrique	Section
+Author	Rédigé par	Prepared by
+Cover	Enveloppe de transmission QSL	QSL transmission envelope
+ReferenceBag	Sac / Dépêche	Bag / Despatch
+Inventory	Inventaire	Inventory
+LabelCode	Référence d'étiquette	Label reference
+Rail	Chemin de fer	By rail
+Ship	Navire	By sea
+Road	Véhicule routier	By road
+QslCards	Cartes QSL	QSL cards
+Incoming	À l'arrivée	Inbound
+Outgoing	Au départ	Outbound
+Whole	Contrôle exhaustif	Full check
+MissingDocs	Documents manquants	Missing documents
+MissingBag	Sac manquant	Missing bag
+ExtraBag	Sac en excédent	Extra bag
+SealMismatch	Scellé non conforme	Incorrect seal
+MissingCard	Cartes manquantes	Missing cards
+ExtraCard	Cartes en excédent	Extra cards
+Damaged	Avarié	Damaged
+Other	Autre	Other
+Withdraw	Retrait	Withdrawal
+TransitReply	Observations du bureau de transit	Transit bureau remarks
+Card@卡号／物流号	Nº QSL / Suivi	QSL ID / Tracking
+Station@原寄／寄达呼号	Indicatifs	Call signs
+Notes@通联及备注	QSO et remarques	QSO and remarks
+ReceivedNo	Nº de réception	Receipt number
+Contact	Contact radio	Radio contact
+Listening	Écoute SWL	SWL listening
+Parcel	Colis	Parcel
+Letter	Lettre	Letter
+SmallPacket	Petit paquet	Small packet
+Express	Exprès	Express
+FM	FM	FM
+AM	AM	AM
+SSB	BLU	SSB
+CW	Télégraphie	CW
+DeliveredDate	Date de remise	Date of delivery
+Declaration	Déclaration	Declaration
+Eqsl	Confirmation eQSL	eQSL confirmation
+Station@收寄／寄达台	Origine / Dest.	From / To
+Destination@寄达地	Arrivée	Dest.
+Origin@启运地	Départ	Origin
+Via@中转卡片局	Transit	Transit bureau
+Date@寄发日期	Date dép.	Desp. date
+Dispatch@总封号码	Nº dép.	Desp. no.
+BagNo@容器号码	Nº sac	Bag nº
+DispatchType@总封类别	Cat.	Class
+BagType@容器类型	Type sac	Bag type
+BagNo@袋序	Nº sac	Bag no.
+IndexNumber@总封序号	Nº	No.
+Qty@卡片数	Nb QSL	QSL qty
+Class@袋类别	S.-cl.	Subcl.
+Tracked@条码平信	Suivi	Tracked
+Untracked@无单平信	Sans suivi	Untracked
+FromSignShort	Visa exp.	Despatch
+ToSignShort	Visa dest.	Receipt
+Qty@卡片件数	Nb QSL	QSL qty
+Class@类型	Type	Type
+Weight@重量	Poids	Weight
